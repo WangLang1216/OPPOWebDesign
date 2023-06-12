@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OPPO Reno5 Pro+星河入梦</title>
+	<link rel="icon" href="https://business.oppo.com/static/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+    <style>
+		body{
+			overflow-x:hidden;
+		}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* html,
+        body {
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Helvetica;
+            font-size: 15px;
+            font-weight: normal;
+            padding-top: 60px;
+        } */
+
+        .clearfix::before,
+        .clearfix::after {
+            content: "";
+            display: table;
+        }
+
+        .clearfix::after {
+            clear: both;
+        }
+
+		
+		
+		
+        div.box {
+            width: 450px;
+            height: 450px;
+        }
+
+        div.box a.phone-display {
+            display: block;
+            position: relative;
+            height: 100%;
+        }
+		/* @media all and (min-width:763px) and (max-width:999px) {
+			div.box {
+				position: absolute;
+				top: 20%;
+				float: left;
+			    width: 50px;
+			    height: 150px;
+			}
+		}
+ */
+        div.bottom-nav{
+            margin-top: 20px;
+        }
+        
+        div.bottom-nav div.tab-btn{
+            position: relative;
+            width: 40px;
+            height: 60px;
+            cursor: pointer;
+        }
+        
+        div.tab-btn:hover{
+            opacity: .6;
+        }
+
+        div.tab-btn.btn-left{
+            float: left;
+        }
+
+        div.tab-btn.btn-right{
+            float: right;
+        }
+
+        i.shift-icon {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 26px;
+            height: 26px;
+            border: 1px solid #999;
+            border-radius: 50%;
+        }
+
+        i.shift-icon>span {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 10px;
+            height: 10px;
+            border-bottom: 1.5px solid #999;
+        }
+
+        div.btn-left i.shift-icon>span {
+            border-left: 1.5px solid #999;
+            transform: translate(-30%, -50%) rotate(45deg);
+        }
+        div.btn-right i.shift-icon>span {
+            border-right: 1.5px solid #999;
+            transform: translate(-70%, -50%) rotate(-45deg);
+        }
+
+
+        div.bottom-nav div.bottom-center-nav{
+            position: relative;
+            height: 60px;
+            margin: 0 50px;
+            overflow: hidden;
+        }
+        div.bottom-center-nav ul.small-img-ul {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+        }
+        ul.small-img-ul li.img{
+            float: left;
+            width: 60px;
+            height: 100%;
+            border:1px solid transparent;
+            background-size: 100% 100%;
+            cursor: pointer;
+        }
+        ul.small-img-ul li.img.active{
+            border-color: rgb(160, 27, 27);
+        }
+		
+		
+		.daohangul li{
+			list-style: none;
+			margin-left: 20px;
+		}
+		.daohangul li>a{
+			font-size: 15px;
+			color: gray;
+			text-decoration: none;
+		}
+		
+		
+		/* 加减框 */
+		.plussub {
+			width:150px;
+			height:45px;
+			border:1px solid #ccc;
+			background:#fff;
+			border-radius: 8px;
+			margin:0 auto;
+		}
+		.plussub span {
+			/* width:30px;
+			height:40px; */
+			float:left;
+			text-align:center;
+			line-height:40px;
+			cursor:pointer;
+		}
+		.plussub .sub {
+			width:40px;
+			height:45px;
+			border-right:1px solid #ccc;
+		}
+		.plussub .plus {
+			width:40px;
+			height:45px;
+			border-left:1px solid #ccc;
+		}
+		.plussub input[type="text"] {
+			border:none;
+			height:36px;
+			width:65px;
+			text-align:center;
+			float:left;
+			line-height:36px;
+		}
+
+
+    </style>
+</head>
+
+<body>
+
+	<header>
+		<div><a href="index.html"><img src="images/huantai/top_1.png" class="img-responsive" /></a></div>
+		<!-- 导航 -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12" style="background-color: black;">
+					<div class="col-md-12  col-sm-12 col-xs-12"><br/></div>
+						<ul class="daohangul" style="display: flex;float: left;">
+							<li><a href="huantai.html">欢太品牌</a></li>
+							<li><a href="#">欢太云服务</a></li>
+							<li><a href="#">软件商城</a></li>
+							<li><a href="gowuche.html">购物车</a></li>
+						</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	
+	<div class="zhobgbu1 container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6 col-xs-12" style="float: right;">
+				<div class="col-md-12 col-sm-12 col-xs-12" style="height: 50px;"></div>
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12"><span class="min1" style="font-size: 25px; color: black;">Reno5 Pro+  星河入梦  12G+256G</span><span class="min2" style="font-size: 25px; color: black;display: none;">Reno5 Pro  浮光夜影  8G+128G</span><br/></div>
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<span style="font-size: 14px; color: orange;">【新品上市| 预定尊享￥249 NFC时尚版手环 | 晒单送30元红包（即3000积分）| 加1元换购手机支架/数据线】</span>
+						<span style="font-size: 14px;color: black;">6400万水光人像四摄，65W超级闪充，30个月流畅护航。</span><br/>
+						<span><a href="#" style="color: orange;font-size: 14px;text-decoration: underline;">以旧换新最高额外补贴1500元 >>></a></span>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12"><br/></div>
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<span style="font-size: 30px;color: black;" class="jiage1">￥4499.00</span><span class="jiage2" style="font-size: 30px;color: black;display: none;">￥3998.00</span>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12"><br/></div>
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<span style="font-size: 11px; color: black;">商品支持：</span>
+						<span style="font-size: 11px; color: black;" class="glyphicon glyphicon-registration-mark">花呗分期 12期免息</span>
+						<span style="font-size: 11px; color: black;" class="glyphicon glyphicon-copyright-mark">门店送货上门</span>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12"><hr/></div>
+					<div class="col-md-12 col-sm-12 col-xs-12"><span style="font-size: 15px;color: gray;">颜色</span></div>
+					<div class="col-md-12 col-sm-12 col-xs-12" style="height: 30px;"></div>
+					<div class="col-md-6 col-md-6 col-xs-6">
+						<div class="bian1" style="width: 200px;height: 50px;line-height: 50px;border: mediumaquamarine solid 1px;border-radius: 10px;" align="center"><span style="font-size: 18px;color: black;">星河如梦</span></div>
+					</div>
+					<div class="col-md-6 col-md-6 col-xs-6">
+						<div class="bian2" style="width: 200px;height: 50px;line-height: 50px;border: gray solid 1px;border-radius: 10px;" align="center"><span style="font-size: 18px;color: black;">浮光夜影</span></div>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12" style="height: 10px;"></div>
+					<div class="col-md-12 col-sm-12 col-xs-12"><span style="font-size: 15px;color: gray;">配置</span></div>
+					<div class="col-md-12 col-sm-12 col-xs-12" style="height: 30px;"></div>
+					<div class="col-md-6 col-md-6 col-xs-6">
+						<div class="bian4" style="width: 200px;height: 50px;line-height: 50px;border: gray solid 1px;border-radius: 10px;" align="center"><span style="font-size: 18px;color: black;">8G+128G</span></div>
+					</div>
+					<div class="col-md-6 col-md-6 col-xs-6">
+						<div class="bian3" style="width: 200px;height: 50px;line-height: 50px;border: mediumaquamarine solid 1px;border-radius: 10px;" align="center"><span style="font-size: 18px;color: black;">12G+256G</span></div>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12"><br/></div>
+					<div class="col-md-12 col-sm-12 col-xs-12"><span style="font-size: 15px;color: gray;">选择数量</span></div>
+					<div class="col-md-12 col-sm-12 col-xs-12"><br/></div>
+					<div class="col-md-6 col-md-6 col-xs-6">
+						<div class="plussub" style="float: left;">
+						    <span onclick="sub(1)" class="sub">-</span>
+						    <input class="yzquantity1" onblur="yzquantity(1)" type="text" value="1">
+						    <span onclick="plus(1)" class="plus">+</span>
+						</div>
+					</div>
+					<div class="col-md-6 col-md-6 col-xs-6">
+						<a href="gowuche.html" style="text-decoration: none;"><div style="width: 200px;height: 45px;line-height: 45px;border-radius: 8px;background-color: red;" align="center"><span style="font-size: 18px;color: white;">全款预定</span></div></a>
+					</div>
+					
+					
+				</div>
+			</div>
+			<div class="col-md-6 col-md-6 col-xs-12"style="float: left;">
+				<div class="box">
+					<a href="javascript:;" class="phone-display">
+					</a>
+					<div class="bottom-nav clearfix">
+
+						<div class="tab-btn btn-left">
+							<i class="shift-icon">
+								<span></span>
+							</i>
+						</div>
+
+						<div class="tab-btn btn-right">
+							<i class="shift-icon">
+								<span></span>
+							</i>
+						</div>
+
+						<div class="bottom-center-nav">
+
+							<ul class="small-img-ul">
+							</ul>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			
+			<div class="col-md-12 col-sm-12 col-xs-12" style="height: 100px;"></div>
+			
+		</div>
+	</div>
+
+	
+	
+	
+	
+	
+	
+    <script src="jq22.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			//导航a标签hover切换白灰
+			$(".daohangul a").hover(function(){
+				$(this).css("color","white");
+			},function(){
+				$(this).css("color","grey");
+			});
+			
+			
+			/* 右侧特效边框 */
+			$(".bian1").hover(function(){
+				$(this).css("border","mediumaquamarine solid 2px");
+				$(".bian2").css("border","grey solid 1px");
+				$(".min1").show();
+				$(".min2").hide();
+			},function(){
+				$(".min1").show();
+				$(this).css("border","mediumaquamarine solid 2px");
+			});
+			$(".bian2").hover(function(){
+				$(this).css("border","mediumaquamarine solid 2px");
+				$(".bian1").css("border","grey solid 1px");
+				$(".min2").show();
+				$(".min1").hide();
+			},function(){
+				$(this).css("border","mediumaquamarine solid 2px");
+				$(".min2").show();
+			});
+			
+			$(".bian3").hover(function(){
+				$(this).css("border","mediumaquamarine solid 2px");
+				$(".bian4").css("border","grey solid 1px");
+				$(".jiage1").show();
+				$(".jiage2").hide();
+			},function(){
+				$(".jiage1").show();
+				$(this).css("border","mediumaquamarine solid 2px");
+			});
+			$(".bian4").hover(function(){
+				$(this).css("border","mediumaquamarine solid 2px");
+				$(".bian3").css("border","grey solid 1px");
+				$(".jiage2").show();
+				$(".jiage1").hide();
+			},function(){
+				$(this).css("border","mediumaquamarine solid 2px");
+				$(".jiage2").show();
+			});
+			
+			
+			
+		});
+		
+		
+		/* 加减框 */
+		function sub(psid) {
+		    var yzquantity = $(".yzquantity" + psid).val();
+		    if (yzquantity > 0) {
+		        if (yzquantity == 1) {
+		            alert("已到达最小数量！");
+		            return;
+		        }
+		        yzquantity--;
+		        $(".yzquantity" + psid).val(yzquantity);
+		    } else {
+		        alert("请输入有效数量！");
+		    }
+		}
+		
+		function plus(psid) {
+		    var yzquantity = $(".yzquantity" + psid).val();
+		    if (yzquantity > 0) {
+		        yzquantity++;
+		        $(".yzquantity" + psid).val(yzquantity);
+		    } else {
+		        alert("请输入有效数量！");
+		    }
+		}
+		
+		function yzquantity(psid) {
+		    var yzquantity = $(".yzquantity" + psid).val();
+		    var reg = /^[0-9]*$/;
+		    reg.test(yzquantity);
+		    if (reg.test(yzquantity) == false) {
+		        alert("请输入有效数量！");
+		        $(".yzquantity" + psid).val(yzquantity);
+		    }
+		}
+		
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>换太商城购物车</title>
+		<link rel="icon" href="https://business.oppo.com/static/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+	</head>
+	<style type="text/css">
+		body::-webkit-scrollbar{
+		    width:0;
+		}
+		.daohangul li{
+			list-style: none;
+			margin-left: 20px;
+		}
+		.daohangul li>a{
+			font-size: 15px;
+			color: gray;
+			text-decoration: none;
+		}
+		h1{
+			color: black;
+			font-size: 25px;
+		}
+		table{
+			width: 100%;
+			margin: 0 auto;
+			text-decoration: none;
+			list-style: none;
+		}
+		td img{
+			width: 80px;
+			height: 80px;
+		}
+		th>span{
+			color: black;
+			font-size: 15px;
+		}
+	body{
+		font-size: larger;color: crimson;
+		background-color: #F5F5F5;
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	table th,table td{
+		font-size: 10px;
+	 text-align: center;
+		
+	}
+.zhen{
+
+	background-color: white;
+}
+	</style>
+	<body>
+		
+		<header>
+			<div><a href="index.html"><img src="images/huantai/top_1.png" class="img-responsive" /></a></div>
+			<!-- 导航 -->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12" style="background-color: black;">
+						<div class="col-md-12  col-sm-12 col-xs-12"><br/></div>
+							<ul class="daohangul" style="display: flex;float: left;">
+								<li><a href="huantai.html">欢太品牌</a></li>
+								<li><a href="#">欢太云服务</a></li>
+								<li><a href="#">软件商城</a></li>
+								<li><a href="gowuche.html">购物车</a></li>
+							</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		
+	<div class="container">
+		
+		<h1><span class="glyphicon glyphicon-shopping-cart">我的购物车</span></h1>
+		<table  class="zhen" style="background:url(images/index/index.jpg);border-radius: 20px;">
+			<thead>
+				<tr><th><br/></th></tr>
+				<tr>
+				<th><span>商品</span></th>
+				<th><span>单价</span></th>
+				<th><span>数量</span></th>
+				<th><span>金额</span></th>
+				<th><span>删除</span></th>
+				</tr>
+			</thead>
+			<tbody id="goods">
+				<!--<tr>
+				<td>面膜</td>
+				<td>150</td>
+				<td align="center"> 
+					<input type="button" value="-" id="jian" onclick="change(this,-1);"/>-->
+					<!--readonly规定输入字段为只读-->
+					<!--<input id="text" type="text" size="1" value="1" readonly="readonly" />
+					<input type="button" value="+" id="add" onclick="change(this,1);"/>
+				</td>
+				<td> <input id="money" size="1" value="80"></input></td>
+				<td align="center">
+					<input type="button" value="X" onclick="del(this)" />
+				</td>
+				</tr>-->
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3" align="center" ><span style="color: red; font-size: 15px;">总计</span></td>
+					<td id="total"></td>
+					<td><span style="color: red; font-size: 15px;">元</span></td>
+				</tr>
+			</tfoot>
+		</table>
+		<br/>
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12"><a href="#"><div class="lijizhifu" style="display: none; width: 100px;height: 30px;border-radius: 10px;line-height: 30px;background-color: red;float: right;" align="center"><span style="color: white;font-size: 15px;">立即支付</span></div></a></div>
+		</div>
+		
+		<br/><br/><br/><br/>
+		<span style="float: left;font-size: 25px;color: orange;" class="jinping">精品推荐&nbsp;<span class="glyphicon glyphicon-chevron-down"></span></span>
+		<span style="float: right;"><a href="huantai.html" class="chakan" style="text-decoration: none;color: gray;font-size: 15px;">查看更多</a></span>
+		<table class="zhen jingping" style="border-radius: 20px;display: none;">
+			<tr><th><br/></th></tr>
+			<tr>
+				<!--文本th-->
+				<th><span>商品</span></th>
+				<th><span>单价</span></th>
+				<th><span>名称</span></th>
+				
+				<th><span>好评率</span></th>
+				<th><span>添加</span></th>
+			</tr>
+			<tr>
+				<td><img src="images/gw1.png"></td>
+					<td style="color: orange;">1299.00</td>
+				<td  style="color: black;">A53 湖水绿 4G+128G</td>
+				
+				<td  style="color: orange;">88%</td>
+				<td align="center">
+					<input id="jiaru" type="button" value="加入购物车" onclick="add_shoppingcar(this)"/>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="images/gw2.png"></td>
+				<td  style="color: orange;">2499.00</td>
+				<td  style="color: black;">Reno4 SE 超闪蓝/8G+128G</td>
+				
+				<td  style="color: orange;">82%</td>
+				<td align="center">
+					<input id="jiaru" type="button" value="加入购物车" onclick="add_shoppingcar(this)"/>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="images/gw3.png"></td>
+				<td  style="color: orange;">1499.00</td>
+				<td style="color: black;">K7x 黑镜 6G+128G</td>
+				
+				<td style="color: orange;">75%</td>
+				<td align="center">
+					<input id="jiaru" type="button" value="加入购物车" onclick="add_shoppingcar(this)"/>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="images/gw4.png"></td>
+				<td style="color: orange;">2699.00</td>
+				<td style="color: black;">Reno5 星河入梦 8G+128G</td>
+				
+				<td style="color: orange;">80%</td>
+				<td align="center">
+					<input id="jiaru" type="button" value="加入购物车" onclick="add_shoppingcar(this)"/>
+				</td>
+			</tr>
+		</table>
+		<br/>
+		</div>
+	</body>
+	<script type="text/javascript">
+		//this js中指当前对象
+		function add_shoppingcar(btn){
+			var tr=btn.parentNode.parentNode;
+			var tds=tr.getElementsByTagName("td");
+			var name=tds[0].innerHTML;
+			var price=tds[1].innerHTML;
+			var tbody=document.getElementById("goods");
+			var row=tbody.insertRow();//insertRow表格开头插入新行
+			row.innerHTML="<td>"+name+"</td>"+
+		"<td>"+price+"</td>"+
+		"<td align='center'>"+
+		"<input type='button' value='-' id='jian'  onclick='change(this,-1)'  />"+
+		"<input id='text' type='text' size='1' value='1' readonly='readonly' />"+
+		"<input type='button' value='+' id='add'  onclick='change(this,1)'  />"+
+		"</td>"+
+		"<td>"+price+"</td>"+
+		"<td align='center'>"+
+			"<input type='button' value='X' onclick='del(this)'/>"+
+		"</td>"+
+		"</tr>"
+		total();
+		}
+		//增加减少数量，用n正负1来表示点击了加减按钮
+		function change(btn,n){
+		//获取数量的三个input对象
+		var inputs = btn.parentNode.getElementsByTagName("input");
+		//获取原来的数量
+		var amount = parseInt(inputs[1].value);
+		//当amount=1时不能再点击"-"符号
+		//用n<0来表示点击了减button
+		if(amount<=1 && n<0){
+			return;
+		}
+		//根据加减来改变数量
+		inputs[1].value = amount + n;
+		//将改变后的数量值赋值给amount
+		amount = inputs[1].value;
+		//获取表格中的行
+		var tr = btn.parentNode.parentNode;
+		//获取所有的列
+		var tds = tr.getElementsByTagName("td");
+		//获取单价
+		var price = parseFloat(tds[1].innerHTML);
+		//总价=单价*数量
+		var m = price * amount;
+		//将总价赋值给相应的位置
+		tds[3].innerHTML = m;
+		//调用total方法，求总计
+		total();
+	}
+
+
+		function total(){
+			var tbody=document.getElementById("goods");
+			var trs=tbody.getElementsByTagName("tr");
+			var sum=0;
+			for(var i=0;i<trs.length;i++){
+				var tds=trs[i].getElementsByTagName("td");
+				var m=tds[3].innerHTML;
+				sum += parseFloat(m);
+			}
+			var total=document.getElementById("total");
+			total.innerHTML = sum;
+		}
+		function del(i){
+			var tr=i.parentNode.parentNode;
+			tr.parentNode.removeChild(tr);
+			//tr.remove(tr);
+			total();
+		}
+	</script>
+	
+	<script type="text/javascript">
+		$(function(){
+			//导航a标签hover切换白灰
+			$(".daohangul a").hover(function(){
+				$(this).css("color","white");
+			},function(){
+				$(this).css("color","grey");
+			});
+			
+			$(".chakan").hover(function(){
+				$(this).css("color","orange");
+			},function(){
+				$(this).css("color","grey");
+			});
+			
+			$(".jinping").click(function(){
+				$(".jingping").slideToggle();
+			});
+			
+			/* $(".jinping").click(function(){
+				if($(".jingping").is(":hidden")){ 
+					$(".jingping").slideDown("slow");
+				} else {
+					$(".jingping").slideUp("slow");
+				}
+			}); */
+			
+			$(".jingping #jiaru").click(function(){
+				$(".lijizhifu").show();
+			});
+			
+		});
+	</script>
+</html>

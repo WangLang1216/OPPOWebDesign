@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>电子时钟</title>
+		<style>
+			p{
+				font-size: 25px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="localtime"></p>
+		<script>
+			setInterval(function getlocaltime(){
+				var time=new Date();
+				var chinatime=time.toLocaleString();
+				var a=time.getDay();
+				const week={
+					0:"星期天",
+					1:"星期一",
+					2:"星期二",
+					3:"星期三",
+					4:"星期四",
+					5:"星期五",
+					6:"星期六",
+				}
+				document.getElementById("localtime").innerHTML=chinatime+week[a];
+			},1000);
+		</script>
+	</body>
+</html>

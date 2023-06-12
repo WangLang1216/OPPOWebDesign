@@ -1,0 +1,279 @@
+body{
+	overflow-x:hidden;
+	background-color: white;
+	background-color: black;
+}
+
+@media all and (max-width:767px) {
+	.xiaoyu767{
+		background-color: white;
+	}
+	.log{
+		background-color: white;
+	}
+	
+	
+}
+@media all and (max-width:768px) {
+	.gundongjianting{
+		display: none;
+	}
+	.dibu{
+		display: none;
+	}
+}
+.pc_erjicaidan img{
+  cursor: pointer;
+  transition: all 0.6s;
+}
+.pc_erjicaidan img:hover{
+	transform: scale(0.9);
+}
+@media all and (min-width:767px) {
+	.shojiyemian{
+		display: none;
+	}
+	
+}
+@media screen and (min-width:640px) and (max-width:999px) {
+	.dengluzhuce{
+		display: none;
+	}
+}
+.erjicaidan{
+	z-index: 100;
+}
+.erjicaidan a{
+	font-size: 15px;
+}
+
+.shoji{
+	position: absolute;
+	display: none;
+	float: left;
+	background-color: #fff;
+}
+
+
+.shipin{
+	/* opacity:0.3; */
+	filter: alpha(opacity=30);
+	background-color:#000;
+}
+
+.shipin2{
+	/* position: fixed;//视频定位方式设为固定
+    right: 0;
+    bottom: 0;//视频位置
+    min-width: 100%;
+    min-height: 100%; //不会因视频尺寸造成页面需要滚动
+    width: auto;
+    height: auto; //尺寸保持原视频大小
+    z-index: -100; //z轴定位，小于0即可
+    -webkit-filter: grayscale(20%);//添加灰度蒙版，如果设定为100%则视频显示为黑白 */
+}
+
+.dier{
+	display: flex;
+	float: left;
+}
+.dier1{
+	flex: 1;
+}
+.dier2{
+	flex: 1;
+}
+.dier3{
+	flex: 1;
+}
+
+
+/* 底部菜单 */
+.shoji1hr{
+	background-color: gray;
+	height: 2px;
+	border:none
+}
+.dibushojiduan span>a{
+	color: gray;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+	
+.dibushojiduan{
+	margin-top: -30px;
+	background: #121212;
+}
+.dibudaohang {
+	background: #121212;
+	font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma;
+}
+
+.dibudaohang ul {
+	list-style-type: none;
+}
+
+.dibudaohang a {
+	color: #b63b4d;
+	text-decoration: none;
+}
+
+/** =======================
+ * Contenedor Principal
+ ===========================*/
+.dibudaohang h1 {
+ 	color: #FFF;
+ 	font-size: 24px;
+ 	font-weight: 400;
+ 	text-align: center;
+ 	margin-top: 80px;
+ }
+
+.dibudaohang h1 a {
+ 	color: #c12c42;
+ 	font-size: 16px;
+ }
+
+ .accordion {
+ 	width: 100%;
+ 	max-width: 360px;
+ 	margin: 30px auto 20px;
+ 	background: #FFF;
+ 	-webkit-border-radius: 4px;
+ 	-moz-border-radius: 4px;
+ 	border-radius: 4px;
+ }
+
+.accordion .link {
+	cursor: pointer;
+	display: block;
+	padding: 15px 15px 15px 42px;
+	color: #4D4D4D;
+	font-size: 14px;
+	font-weight: 700;
+	border-bottom: 1px solid #CCC;
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.accordion li:last-child .link {
+	border-bottom: 0;
+}
+
+.accordion li i {
+	position: absolute;
+	top: 16px;
+	left: 12px;
+	font-size: 18px;
+	color: #595959;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+	right: 12px;
+	left: auto;
+	font-size: 16px;
+}
+
+.accordion li.open .link {
+	color: #b63b4d;
+}
+
+.accordion li.open i {
+	color: #b63b4d;
+}
+.accordion li.open i.fa-chevron-down {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+/**
+ * Submenu
+ -----------------------------*/
+ .submenu {
+ 	display: none;
+ 	background: #444359;
+ 	font-size: 14px;
+ }
+
+ .submenu li {
+ 	border-bottom: 1px solid #4b4a5e;
+ }
+
+ .submenu a {
+ 	display: block;
+ 	text-decoration: none;
+ 	color: #d9d9d9;
+ 	padding: 12px;
+ 	padding-left: 42px;
+ 	-webkit-transition: all 0.25s ease;
+ 	-o-transition: all 0.25s ease;
+ 	transition: all 0.25s ease;
+ }
+
+ .submenu a:hover {
+ 	background: #b63b4d;
+ 	color: #FFF;
+ }
+ 
+ /* 底部菜单电脑端*/
+ /* 底部 */
+ .dibu{
+ 	background-color: #121212;
+ }
+ .dibucaidan{
+ 	margin-top: 50px;
+ }
+ .dibudaohang{
+ 	font-size: 18px;
+ 	color: white;
+ }
+ .dibu li{
+ 	line-height: 30px;
+ }
+ .dibu li>a{
+ 	color: gray;
+ 	text-decoration: none;
+ }
+ .hr{
+ 	background-color: gray;
+ 	height: 2px;
+ 	border:none
+ }
+ .dibu span>a{
+ 	color: gray;
+ 	text-decoration: none;
+ }
+ 
+ 
+ 
+ /* 手机端中*/
+ .shojizhong4{
+	 background: url(https://dsfs.oppo.com/product/2020/findx2pro/images/home/screen/mobile-head-0acb5f256e4c308552091d597fde5a7f.png) no-repeat;
+	-moz-background-size:100% 100%;
+	background-size:100% 100%;
+ }
+ 
+ 
+ /* 二级菜单 */
+ .pc_erjicaidan .pc_ul1>li{
+ 	padding-left: 40px;
+ }
+ 
+ .FindX2erji{
+ 	display: none;
+ }

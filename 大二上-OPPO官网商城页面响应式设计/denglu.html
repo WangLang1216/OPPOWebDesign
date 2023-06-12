@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>OPPO 登录</title>
+		<link rel="icon" href="https://business.oppo.com/static/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<style type="text/css">
+			body{
+				background: url("images/denglubeijng.png") no-repeat;
+				-moz-background-size:100% 100%;
+				background-size:100% 100%;
+			}
+			header{
+				height: 150px;
+				line-height: 100px;
+			}
+			header li{
+				float: left;
+				list-style: none;
+				margin-left: 20px;
+			}
+			header ul li a{
+				color: gray;
+				font-size: 15px;
+				text-decoration: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			
+			
+		</style>
+		
+	</head>
+	<body style="height: 100%;">
+		
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="row">
+							<div class="col-md-8 col-sm-6 col-xs-6" style="float: left;">
+								<ul>
+									<li><a href="index.html">官网</a></li>
+									<li><a href="#">ColorOS</a></li>
+									<li><a href="#">云服务</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-6" style="float: right;">
+								<ul>
+									<li><a href="#">帮助中心</a></li>
+									<li>
+										<div class="dropdown">
+										  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="border: 0;background-color: transparent;">
+										    简体中文
+										    <span class="caret"></span>
+										  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="margin-top: -35px;">
+										    <li><a href="#">简体中文</a></li>
+										    <li><a href="#">繁体中文</a></li>
+										    <li><a href="#">English</a></li>
+										  </ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		
+		<div class="zhongbu container">
+			<div class="row">
+				<div class="col-md-12 clo-sm-12 col-xs-12" align="center">
+					<img src="images/index/OPPO_01.png" class="img-responsive"/>
+					<div style="height: 5px;"></div>
+					<span style="font-size: 10px;color: black;">登录欢太账号可享受更多的服务</span>
+				</div>
+				<div class="col-md-12 clo-sm-12 col-xs-12" style="height: 30px;"></div>
+				<div class="col-md-12 clo-sm-12 col-xs-12" align="center">
+					<div style="background-color: #ffffff;width: 400px;height: 480px;">
+						<div class="row">
+							<div class="col-md-12 clo-sm-12 col-xs-12" style="height: 2px;"></div>
+							<div class="col-md-12 clo-sm-12 col-xs-12 shaoma">
+								<img src="images/zuce.png" class="img-responsive" style="float: right;"/>
+								<div style="float: right; border: mediumturquoise 1px solid;height: 20px;width: 70px;line-height: 20px;border-radius: 5px;" align="center">
+									<span style="font-size: 8px;color: black;">扫码登录</span>
+								</div>
+							</div>
+							<div class="col-md-12 col-sm-12 col-xs-12 putongdenglu">
+								<div class="row">
+									<div class="col-md-12 col-sm-12 col-xs-12" style="height: 25px;"></div>
+									<div class="col-md-12 col-sm-12 col-xs-12 zhanghaodenglu">
+										<div class="row">
+											<div class="col-md-12 col-sm-12 col-xs-12"><span style="font-size: 25px;color: black;">账号登录</span></div>
+											<div class="col-md-12 col-sm-12 col-xs-12" style="height: 20px;"></div>
+											<div class="col-md-6 col-sm-6 col-xs-6"><span style="font-size: 15px;color: black;float: right;" class="zh">短信验证码登录</span></div>
+											<div class="col-md-1 col-sm-1 col-xs-1"><span style="font-size: 15px;color: gray;">|</span></div>
+											<div class="col-md-5 col-sm-5 col-xs-5"><span style="font-size: 15px;color: gray;float: left;" class="mm">密码登录</span></div>
+											<div class="col-md-12 col-sm-12 col-xs-12 duanxinyanz">
+												<div class="row">
+													<div class="col-md-12 col-sm-12 col-xs-12" style="height: 20px;"></div>
+													<div class="col-md-12 col-sm-12 col-xs-12"><input id="mobile" style="width: 300px;height: 45px;background-color: #f7f7f7;border-radius: 9px;border: 0;" type="text" value="&nbsp&nbsp请输入手机号码"><div id="divMobile"></div></div>
+													<div class="col-md-12 col-sm-12 col-xs-12" style="height: 10px;"></div>
+													<div class="col-md-7 col-sm-7 col-xs-7"><input style="float: right; width: 170px;height: 45px;background-color: #f7f7f7;border-radius: 9px;border: 0;" type="text" value="&nbsp&nbsp请输入验证码"></div>
+													<div class="col-md-5 col-sm-5 col-xs-5"><div style="float: left; width: 100px;height: 45px;background-color: #d9d9d9;border: 0;border-radius: 10px;line-height: 45px;"><span style="font-size: 15px;color: white;">获取验证码</span></div></div>
+													<div class="col-md-12 clo-sm-12 col-xs-12" style="height: 25px;"></div>
+												</div>
+											</div>
+											<div class="col-md-12 col-sm-12 col-xs-12 mimadenglu" style="display: none;">
+												<div class="row">
+													<div class="col-md-12 col-sm-12 col-xs-12" style="height: 20px;"></div>
+													<div class="col-md-12 col-sm-12 col-xs-12"><input style="width: 300px;height: 45px;background-color: #f7f7f7;border-radius: 9px;border: 0;" type="text" value="&nbsp&nbsp请输入手机号或邮箱"></div>
+													<div class="col-md-12 col-sm-12 col-xs-12" style="height: 10px;"></div>
+													<div class="col-md-12 col-sm-12 col-xs-12"><input style=" width: 300px;height: 45px;background-color: #f7f7f7;border-radius: 9px;border: 0;" type="text" value="&nbsp&nbsp请输入密码"></div>
+													<div class="col-md-12 col-sm-12 col-xs-12" style="height: 10px;"></div>
+													<div class="col-md-12 col-sm-12 col-xs-12"><span style="font-size: 10px;color: gray;margin-left: -60%;">忘记密码</span></div>
+													<div class="col-md-12 clo-sm-12 col-xs-12" style="height: 25px;"></div>
+												</div>
+											</div>
+											
+											<div class="col-md-12 col-sm-12 col-xs-12"><a href="index.html"><div style="width: 300px;height: 48px;background-color: #2ad181;border: 0;border-radius: 10px;line-height: 48px;"><span style="font-size: 15px;color: white;">登录</span></div></a></div>
+											<div class="col-md-12 col-sm-12 col-xs-12" style="height: 5px;"></div>
+											<div class="col-md-6 col-sm-6 col-xs-6"><a href="#"><span style="font-size: 10px;color: gray;">隐私政策</span></a></div>
+											<div class="col-md-6 col-sm-6 col-xs-6"><a href="zhuce.html"><span style="font-size: 10px;color: #2ad181;">注册账号</span></a></div>
+											<div class="col-md-12 col-sm-12 col-xs-12" style="height: 30px;"></div>
+											<div class="col-md-12 col-sm-12 col-xs-12"><span style="font-size: 10px;color: gray;">——&nbsp;&nbsp;其他方式登录&nbsp;&nbsp;——</span></div>
+											<div class="col-md-12 col-sm-12 col-xs-12" style="height: 10px;"></div>
+											<div class="col-md-12 col-sm-12 col-xs-12"><img src="images/qq.png" class="img-responsive" width="10%" height="10%"/></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="col-md-12 col-sm-12 col-xs-12 erweima" style="display: none;">
+								<div class="row">
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<div class="col-md-12 col-sm-12 col-xs-12" style="height: 25px;"></div>
+										<div class="col-md-12 col-sm-12 col-xs-12"><span style="font-size: 25px;color: black;">扫码登录</span></div>
+										<div class="col-md-12 col-sm-12 col-xs-12" style="height: 20px;"></div>
+										<div class="col-md-12 col-sm-12 col-xs-12" align="center">
+											<div style="width: 170px;height: 170px; border: black 1px solid;border-radius: 10px;"><img src="images/zhuceerweima.jfif" class="img-responsive"/></div>
+										</div>
+										<div class="col-md-12 col-sm-12 col-xs-12" style="height: 5px;"></div>
+										<div class="col-md-12 col-sm-12 col-xs-12" align="center">
+											<div style="width: 180px;height: 180px; border: 0;border-radius: 10px;"><img src="images/zuceerweima2.png" class="img-responsive"/></div>
+										</div>
+										<div class="col-md-12 col-sm-12 col-xs-12" style="height: 5px;"></div>
+										<div class="col-md-12 col-sm-12 col-xs-12"><span style="font-size: 15px;">请进入手机设置&nbsp;"欢太账号"&nbsp;扫码登录</span></div>
+									</div>
+								</div> 
+							</div>
+							
+							<!-- <div class="col-md-12 col-sm-12 col-xs-12" style="height: 47px;"></div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		
+		
+		
+		<script type="text/javascript">
+			$(function(){
+				$("a").css("text-decoration","none");
+				
+				//登录方式切换
+				$(".zh").hover(function(){
+					$(".mimadenglu").hide();
+					$(this).css("color","black");
+					$(".mm").css("color","grey");
+					$(".duanxinyanz").show();
+				},function(){
+					$(".duanxinyanz").show();
+				});
+				
+				$(".mm").hover(function(){
+					$(".duanxinyanz").hide();
+					$(this).css("color","black");
+					$(".zh").css("color","grey");
+					$(".mimadenglu").show();
+				},function(){
+					$(".mimadenglu").show();
+				});
+				
+				//扫码切换
+				$(".shaoma").hover(function(){
+					$(".putongdenglu").hide();
+					$(".erweima").show();
+				},function(){
+					$(".erweima").hide();
+					$(".putongdenglu").show();
+				});
+				
+				
+				$("#mobile").blue(function(){
+					var mobile=$(this).val();
+					var $mobileId=$("#divMoble");
+					var regMobile=/^1\d{10}$/;
+					if(regMobile.tes(mobile) ==false){
+						$mobileId.html("手机号码不正确，请重新输入");
+						return false;
+					}
+					$mobileId.html("");
+					return true;
+				});
+				
+				
+			});
+			
+		</script>
+		
+		
+		
+	</body>
+</html>

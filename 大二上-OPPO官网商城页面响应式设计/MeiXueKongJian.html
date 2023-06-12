@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="U6TF-8">
+	<title>OPPO 美学空间</title>
+	<link rel="icon" href="https://business.oppo.com/static/favicon.ico">
+	<link rel="stylesheet" href="cssChen/swiper.min.css">
+	<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src="jsChen/swiper.min.js"></script>
+	<script src='jsChen/jquery2dibu.js'></script>
+	<script src="jsChen/jquery2dibu2.js"></script>
+	<script src="jsChen/bootstrap.js"></script>
+	<link rel="stylesheet" href="cssChe/style.css">
+	<link href="cssChen/font-awesomedibu3.min.css" rel="stylesheet" type="text/css" />
+	<link href="cssChen/styledibu.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="cssChen/styledibu2.css" media="screen" type="text/css" />
+	<link rel="stylesheet" href="cssChen/bootstrap.css">
+	<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+     <style type="text/css">
+    .aa{
+    	height: 200px;
+    }
+     .bb{
+     	background:black;
+     	height: 600px;
+     }
+     .cc{
+     	width: 100%;
+     height: 1000px;
+     	background: url(images/39.png);
+     	background-size: cover;
+     }
+     .dd{
+      width: 100%;
+     height:1000px;
+      background: url(images/37.png);
+      background-size: cover;
+     }
+     .ee{
+      width: 100%;
+      height: 30px;
+      background: black;
+     }
+.ff{
+      width: 100%;
+     height:1000px;
+      background: url(images/02421.png);
+      background-size: cover;
+   }
+.gg{
+   width: 100%;
+     height:1000px;
+      background: url(images/36.png);
+      background-size: cover;
+}
+.hh{
+  width: 100%;
+  height:275px;
+}
+.ii{
+  width: 100%;
+  height: 500px;
+}
+.mm{
+  background: black;
+}
+
+
+
+
+
+body{
+		overflow-x:hidden;
+	}
+	@media all and (max-width:767px) {
+		.xiaoyu767{
+			background-color: white;
+		}
+		.log{
+			background-color: white;
+		}
+		.dibu,.pc_erjicaidan{
+			display: none;
+		}
+	}
+	@media all and (min-width:767px) {
+		.dibushojiduan{
+			display: none;
+		}
+		
+	}
+	@media screen and (min-width:640px) and (max-width:999px) {
+		.dengluzhuce{
+			display: none;
+		}
+	}
+	.erjicaidan{
+		z-index: 100;
+	}
+	.erjicaidan a{
+		font-size: 15px;
+	}
+	.shoji{
+		position: absolute;
+		display: none;
+		float: left;
+		background-color: #fff;
+	}
+	
+	/* 底部 */
+	.dibu li{
+		list-style: none;
+	}
+	.dibu{
+		background-color: #121212;
+	}
+	.dibucaidan{
+		margin-top: 50px;
+	}
+	.dibudaohang{
+		font-size: 18px;
+		color: white;
+	}
+	.dibu li{
+		line-height: 30px;
+	}
+	.dibu li>a{
+		color: gray;
+		text-decoration: none;
+	}
+	.hr{
+		background-color: gray;
+		height: 2px;
+		border:none
+	}
+	.dibu span>a{
+		color: gray;
+		text-decoration: none;
+	}
+
+	/* 手机端底部菜单 */
+	/* 底部 */
+	.shoji1hr{
+		background-color: gray;
+		height: 2px;
+		border:none
+	}
+	.dibushojiduan span>a{
+		color: gray;
+		text-decoration: none;
+		font-size: 14px;
+	}
+	
+	* {
+		margin: 0;
+		padding: 0;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+		
+	.dibushojiduan{
+		margin-top: -30px;
+		background: #121212;
+	}
+	.dibudaohang {
+		background: #121212;
+		font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma;
+	}
+	
+	.dibudaohang ul {
+		list-style-type: none;
+	}
+	
+	.dibudaohang a {
+		color: #b63b4d;
+		text-decoration: none;
+	}
+	
+	/** =======================
+	 * Contenedor Principal
+	 ===========================*/
+	.dibudaohang h1 {
+	 	color: #FFF;
+	 	font-size: 24px;
+	 	font-weight: 400;
+	 	text-align: center;
+	 	margin-top: 80px;
+	 }
+	
+	.dibudaohang h1 a {
+	 	color: #c12c42;
+	 	font-size: 16px;
+	 }
+	
+	 .accordion {
+	 	width: 100%;
+	 	max-width: 360px;
+	 	margin: 30px auto 20px;
+	 	background: #FFF;
+	 	-webkit-border-radius: 4px;
+	 	-moz-border-radius: 4px;
+	 	border-radius: 4px;
+	 }
+	
+	.accordion .link {
+		cursor: pointer;
+		display: block;
+		padding: 15px 15px 15px 42px;
+		color: #4D4D4D;
+		font-size: 14px;
+		font-weight: 700;
+		border-bottom: 1px solid #CCC;
+		position: relative;
+		-webkit-transition: all 0.4s ease;
+		-o-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+	}
+	
+	.accordion li:last-child .link {
+		border-bottom: 0;
+	}
+	
+	.accordion li i {
+		position: absolute;
+		top: 16px;
+		left: 12px;
+		font-size: 18px;
+		color: #595959;
+		-webkit-transition: all 0.4s ease;
+		-o-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+	}
+	
+	.accordion li i.fa-chevron-down {
+		right: 12px;
+		left: auto;
+		font-size: 16px;
+	}
+	
+	.accordion li.open .link {
+		color: #b63b4d;
+	}
+	
+	.accordion li.open i {
+		color: #b63b4d;
+	}
+	.accordion li.open i.fa-chevron-down {
+		-webkit-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	
+	/**
+	 * Submenu
+	 -----------------------------*/
+	 .submenu {
+	 	display: none;
+	 	background: #444359;
+	 	font-size: 14px;
+	 }
+	
+	 .submenu li {
+	 	border-bottom: 1px solid #4b4a5e;
+	 }
+	
+	 .submenu a {
+	 	display: block;
+	 	text-decoration: none;
+	 	color: #d9d9d9;
+	 	padding: 12px;
+	 	padding-left: 42px;
+	 	-webkit-transition: all 0.25s ease;
+	 	-o-transition: all 0.25s ease;
+	 	transition: all 0.25s ease;
+	 }
+	
+	 .submenu a:hover {
+	 	background: #b63b4d;
+	 	color: #FFF;
+	 }
+	/*http://www.jq22.com*/
+	
+	/* 放大效果 */
+	.ii img{
+	  cursor: pointer;
+	  transition: all 0.6s;
+	}
+	
+	.ii img:hover{
+		transform: scale(0.95);
+	}
+	.mm img{
+	  cursor: pointer;
+	  transition: all 0.6s;
+	}
+	.mm img:hover{
+		transform: scale(0.95);
+	}
+	
+
+
+/* nav{
+		width: 100%;
+		height: 50px;
+		background-color: transparent;
+	} */
+
+
+
+       </style>
+    
+      
+     
+    
+</head>
+<body>
+		
+		<!--导航-->
+		<div class="xiaoyu767">
+			<nav class="navbar navbar-default navbar-fixed-top bianse ">
+			  <div class="container log">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="index.html"><img src="images/index/OPPO_01.png" class="img-responsive" width="80%" height="80%"/></a>
+				</div>
+			
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse " role="navigation" id="bs-example-navbar-collapse-1">
+				  <ul class="nav navbar-nav flex-column justify-content-center erjicaidan">
+					<!-- <li class="active"><a href="#">Link<span class="sr-only">(current)</span></a></li> -->
+					<!-- <li>
+						<a href="#">手机</a>
+							<ul class="nav navbar-nav shoji flex-column justify-content-center">
+								<li><a href="#">Find X 系列</a></li>
+								<li><a href="#">Reno 系列</a></li>
+								<li><a href="#">ACE 系列</a></li>
+								<li><a href="#">A 系列</a></li>
+								<li><a href="#">K 系列</a></li>
+								<li><a href="#" class="navbar-right">查看更多</a></li>
+							</ul> -->
+						<!-- <div class="shoji nav navbar-nav justify-content-center">
+							<ul>
+								<li><a href="#">Find X 系列</a></li>
+								<li><a href="#">Reno 系列</a></li>
+								<li><a href="#">ACE 系列</a></li>
+								<li><a href="#">A 系列</a></li>
+								<li><a href="#">K 系列</a></li>
+								<ul class="nav navbar-nav navbar-right">
+									<li><a href="#">查看更多</a></li>
+								</ul>
+							</ul>
+						</div> -->
+					<!-- </li>
+					<li><a href="#">智能硬件</a></li>
+					<li><a href="#">关于OPPO</a></li>
+					<li><a href="#">欢太商城</a></li>
+					<li><a href="#">ColorOS</a></li>
+					<li><a href="#">服务</a></li>
+					<li><a href="#">企业业务</a></li>
+				  </ul>
+				  <ul class="nav navbar-nav navbar-right dengluzhuce">
+					<li><a href="#" class="glyphicon glyphicon-user"></a></li>
+					<li><a href="#">China(简体中文)</a></li>
+				  </ul> -->
+				  
+				  
+				  <li class="dropdown">
+				      <a href="#" class="dropdown-toggle erjishoji" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">手机</a>
+				      <ul class="dropdown-menu">
+				        <li><a href="Find_X2_Pro.html">Find X 系列</a></li>
+				        <li><a href="#">Reno 系列</a></li>
+				        <li><a href="#">ACE 系列</a></li>
+				        <li><a href="#">A 系列</a></li>
+				        <li><a href="#">K 系列</a></li>
+				  		<li><a href="#">查看更多</a></li>
+				      </ul>
+				    </li>
+				  				
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">智能硬件</a>
+					  <ul class="dropdown-menu">
+						<li><a href="#">智能电器</a></li>
+						<li><a href="#">穿戴</a></li>
+						<li><a href="#">声学</a></li>
+						<li><a href="#">配件</a></li>
+						<li><a href="#">查看更多</a></li>
+					  </ul>
+					</li>
+					
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于OPPO</a>
+					  <ul class="dropdown-menu">
+						<li><a href="PinPaiKongJian.html">品牌故事</a></li>
+						<li><a href="#">美学空间</a></li>
+						<li><a href="#">活动</a></li>
+						<li><a href="#">新闻中心</a></li>
+					  </ul>
+					</li>
+						
+					<li><a href="huantai.html">欢太商城</a></li>
+					<li><a href="#">ColorOS</a></li>
+					<li><a href="FuWu.html">服务</a></li>
+					<li><a href="qiyeqiwu.html">企业业务</a></li>
+						
+				  </ul>
+				  
+				  <ul class="nav navbar-nav navbar-right dengluzhuce">
+				    <li><a href="denglu.html" class="glyphicon glyphicon-user"></a></li>
+				    <li><a href="#">China(简体中文)</a></li>
+				  </ul>
+				</div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+		</div>
+		
+
+	<div class="bb">
+	<div class="aa"></div>
+	<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-2 col-xs-12"><h1 style="color:white;font-size:50px;">美学空间</h1></div>
+  <div class="col-md-2"></div>
+   <div class="col-md-2"></div>
+    <div class="col-md-2"></div>
+     <div class="col-md-2"></div>
+</div>
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-5 col-xs-12"><h1 style="color:white;font-size:50px;">探索 OPPO 人本主义设计美学</h1></div>
+  <div class="col-md-5"></div> 
+</div>
+<div class="row">
+  <div class="col-md-8"></div>
+  <div class="col-md-2 col-xs-12"><h4 style="color:white;">人与空间</h4>
+  <h5 style="color:white;">OPPO 倡导以人为本、体验至上的“人本主</h5>
+  <h5 style="color:white;">义设计观”。我们以用户的需求为设计和运</h5>
+  <h5 style="color:white;">营的出发点，创新了门店的视觉与体验，将</h5>
+  <h5 style="color:white;">一个单纯的商品卖场转变为轻松、自由的体</h5>
+  </div>
+  <div class="col-md-2"></div>
+</div>
+</div>
+<div class="cc">
+  <div class="row">
+  <div class="col-md-3 col-xs-0"></div>
+  <div class="col-md-3 col-xs-0"></div>
+  <div class="col-md-3 col-xs-0"></div>
+    <div class="col-md-2 col-xs-5">
+      <h1 style="color:white;font-size:40px;">广州</h1>
+      <h3 style="color:white;font-size:20px;">超级旗舰店的设计遵循了广州的地域特色，以及“城市公园”的全新设计概念。以 OPPO 绿和科技白为主要颜色基调，实现了一种无边界的交互设计理念。</h3>
+      <br><a href="color:white;font-size:20px;">了解更多</a>
+    </div>
+    <div class="col-md-1 col-xs-9"></div>
+</div>
+</div>
+<div class="ee">
+ <span class="glyphicon glyphicon-menu-down"></span>
+</div>
+<div class="dd">
+  <div class="row">
+  <div class="col-md-1 col-xs-0"></div>
+  <div class="col-md-2 col-xs-5"><br><br><br><br><br><br><br><br><br><br><br><br><br><h1 style="color:white;font-size:40px;">北京</h1>
+<h3 style="color:white;font-size:20px;">超级旗舰店运用“科技白”的设计、创新的科技为用户带来无边界的空间体验和智能的互动体验。</h3>
+<br><a href="color:white;font-size:20px;">了解更多</a>
+  </div>
+  <div class="col-md-3 col-xs-9"></div>
+   <div class="col-md-3 col-xs-0"></div>
+    <div class="col-md-3 col-xs-0"></div>
+</div>
+</div>
+<div class="ee">
+ <span class="glyphicon glyphicon-menu-down"></span>
+</div>
+<div class="ff">
+  <div class="row">
+  <div class="col-md-1 col-xs-0"></div>
+  <div class="col-md-2 col-xs-5"><br><br><br><h1 style="font-size:40px;">上海</h1>
+<h3 style="font-size:20px;">原木、自然、舒适是上海超级旗舰店的风格关键词。从店内家具的选用到细节设计，我们都探索着人与空间的最大舒适度。</h3>
+<br><a href="color:white;font-size:20px;">了解更多</a>
+  </div>
+  <div class="col-md-3 col-xs-9"></div>
+   <div class="col-md-3 col-xs-0"></div>
+    <div class="col-md-3 col-xs-0"></div>
+</div>
+</div>
+<div class="ee">
+ <span class="glyphicon glyphicon-menu-down"></span>
+</div>
+<div class="gg">
+  <div class="row">
+   <div class="col-md-3 col-xs-0"></div>
+  <div class="col-md-3 col-xs-0"></div>
+  <div class="col-md-3 col-xs-0"></div>
+    <div class="col-md-2 col-xs-5">
+      <br><br><br><br>
+
+      
+
+      <h1 style="color:white;font-size:40px;">泰国</h1>
+      <h3 style="color:white;font-size:20px;">融入 OPPO 未来科技和万物互融的概念，结合 AR 技术营造自由互动的体验氛围，为用户提供更具活力、更温和以及更加国际化视野的体验空间。</h3>
+      <br><a href="color:white;font-size:20px;">了解更多</a>
+    </div>
+    <div class="col-md-1 col-xs-9"></div>
+</div>
+</div>
+<div class="hh"></div>
+<h1 align="center">设计理念</h1>
+<div class="ii">
+<div class="row">
+   <div class="col-md-2 col-xs-0"></div>
+  <div class="col-xs-12 col-md-2">
+      <div class="thumbnail">
+      <img src="images/001.png" alt="" style="width:50%;height:50%;">
+      <div class="caption"> 
+      <br><br>
+      <h4><strong>人文且前沿</strong></h4><br>
+      <h5>以人为本，温度科技，注重科技产品与人的互动感和体验感。</h5>
+      </div>
+    </div>
+
+  </div>
+   <div class="col-xs-12 col-md-2">
+     <div class="thumbnail">
+      <img src="images/002.png" alt="" style="width:50%;height:50%;">
+       <div class="caption"> 
+      <br><br>
+      <h4><strong>简洁且惊喜</strong></h4><br>
+      <h5>设计语言突出轻盈、一体化和漂浮感，曲直共生的表现手法让空间简洁极致。</h5>
+      </div>
+   </div>
+
+  </div>
+   <div class="col-xs-12 col-md-2">
+     <div class="thumbnail">
+      <img src="images/003.png" alt="" style="width:50%;height:50%;">
+       <div class="caption"> 
+      <br><br>
+      <h4><strong>经典且创新</strong></h4><br>
+      <h5>将自然引入空间，我们希望创造出令人怦然心动的美感，给用户带来惊喜。</h5>
+      </div>
+   </div>
+
+  </div>
+   <div class="col-xs-12 col-md-2">
+     <div class="thumbnail">
+      <img src="images/004.png" alt="" style="width:50%;height:50%;">
+       <div class="caption"> 
+      <br><br>
+      <h4><strong>自然与环保</strong></h4><br>
+      <h5>工艺精湛，自然环保，创造一个可持续发展的体验空间。</h5>
+      </div>
+   </div>
+
+  </div>
+   <div class="col-md-2 col-xs-0"></div>
+</div>
+</div>
+<div class="mm">
+<div class="container">
+<br><br>
+<h1 align="center" style="color:white;">探索OPPO美学空间</h1>
+<br><br>
+<div class="row">
+  <div class="col-md-4 col-xs-12">
+    <img src="images/a5.png" style="width:100%;height:100%;">
+    <h4 style="color:white;">美学空间丨探索OPPO人本主义美学</h4>
+    <img src="images/beijing.png" style="width:100%;height:100%;">
+    <h4 style="color:white;">上海丨亲切有趣的艺术场所</h4>
+  </div>
+  <div class="col-md-4 col-xs-12">
+    <img src="images/guangzhou.png" style="width:100%;height:100%;">
+    <h4 style="color:white;">广州丨是旗舰店更是城市公园</h4>
+    <img src="images/a3.jfif" style="width:100%;height:100%;">
+    <h4 style="color:white;">泰国丨展厅化的自由互动体验</h4>
+  </div>
+  <div class="col-md-4 col-xs-12">
+    <img src="images/a2.jfif" style="width:100%;height:100%;">
+    <h4 style="color:white;">北京丨自由无边际的科技空间体验</h4>
+    <img src="images/a4.png" style="width:100%;height:100%;">
+    <h4 style="color:white;">新加坡丨OPPO海外首家旗舰店</h4>
+  </div>
+</div>
+</div>
+</div>
+
+
+			<!--底部 -->
+			<div class="dibu">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-12 dibucaidan"><br/></div>
+									<div class="col-md-2 col-sm-4">
+										<ul>
+											<li class="dibudaohang">推荐产品</li>
+											<li><a href="#">Find X2 Pro</a></li>
+											<li><a href="#">Reno4 Pro</a></li>
+											<li><a href="#">Reno4 SE</a></li>
+											<li><a href="#">Ace2</a></li>
+											<li><a href="#">A72</a></li>
+											<li><a href="#">K7x</a></li>
+											<li><a href="#">OPPO 智能电视</a></li>
+											<li><a href="#">OPPO Enco X</a></li>
+										</ul>
+									</div>
+									<div class="col-md-2 col-sm-4">
+										<ul>
+											<li class="dibudaohang">购买渠道</li>
+											<li><a href="#">线下体验店</a></li>
+											<li><a href="#">换太商城</a></li>
+											<li><a href="#">官方授权店</a></li>
+											<li><a href="#">欢太商城客户端</a></li>
+										</ul>
+									</div>
+									<div class="col-md-2 col-sm-4">
+										<ul>
+											<li class="dibudaohang">探索精彩</li>
+											<li><a href="#">关于OPPO</a></li>
+											<li><a href="#">新闻中心</a></li>
+											<li><a href="#">OPPO 社区</a></li>
+											<li><a href="#">加入我们</a></li>
+											<li><a href="#">知识产权</a></li>
+										</ul>
+									</div>
+									<div class="col-md-2 col-sm-4">
+										<ul>
+											<li class="dibudaohang">商务合作</li>
+											<li><a href="#">企业业务</a></li>
+											<li><a href="#">开放平台</a></li>
+											<li><a href="#">采购相关</a></li>
+											<li><a href="#">媒体联络</a></li>
+										</ul>
+									</div>
+									<div class="col-md-2 col-sm-4">
+										<ul>
+											<li class="dibudaohang">服务与支持</li>
+											<li><a href="#">联系我们</a></li>
+											<li><a href="#">ColorOS</a></li>
+											<li><a href="#">云服务</a></li>
+											<li><a href="#">以旧换新</a></li>
+											<li><a href="#">服务政策</a></li>
+											<li><a href="#">预置软件公示</a></li>
+											<li><a href="#">安全响应中心</a></li>
+										</ul>
+									</div>
+									<div class="col-md-2 col-sm-4"></div>
+								</div>
+								<br/>
+								<div style="margin-left: 20px;"><a href="#"><img src="images/index/weibo.png" width="4%" height="4%" class="img-responsive"/></a></div>
+								<br/>
+								<hr class="hr"/>
+								<div class="row">
+									<div class="col-md-12 col-sm-6">
+										<span><a href="#">隐私</a></span>&nbsp;&nbsp;<span><a href="#">用户协议</a></span>&nbsp;&nbsp;<span><a href="#">法律信息</a></span>&nbsp;&nbsp;<span><a href="#">粤公网安备 44190002001935号</a></span>&nbsp;&nbsp;
+										<span><a href="#"> © 2004 - 2020 OPPO 版权所有 粤ICP备08130115号-1</a></span>
+									</div>
+								</div>
+								<br/>
+							</div>
+						</div>
+			
+			
+			
+			<!-- 手机端底部-->
+			
+			<div class="dibushojiduan">
+						   <div style="height: 50px;"></div>
+					<div class="dibudaohang">
+						<ul id="accordion" class="accordion">
+							<li>
+								<div class="link"><i class="fa fa-paint-brush"></i>推荐产品<i class="fa fa-chevron-down"></i></div>
+								<ul class="submenu">
+									<li><a href="#">Find X2 Pro</a></li>
+									<li><a href="#">Reno4 Pro</a></li>
+									<li><a href="#">Reno4 SE</a></li>
+									<li><a href="#">Ace2</a></li>
+									<li><a href="#">A72</a></li>
+									<li><a href="#">K7x</a></li>
+									<li><a href="#">OPPO 智能电视</a></li>
+									<li><a href="#">OPPO Enco X</a></li>
+								</ul>
+							</li>
+							<li>
+								<div class="link"><i class="fa fa-code"></i>购买渠道<i class="fa fa-chevron-down"></i></div>
+								<ul class="submenu">
+									<li><a href="#">线下体验店</a></li>
+									<li><a href="#">换太商城</a></li>
+									<li><a href="#">官方授权店</a></li>
+									<li><a href="#">欢太商城客户端</a></li>
+								</ul>
+							</li>
+							<li>
+					
+								<div class="link"><i class="fa fa-mobile"></i>探索精彩<i class="fa fa-chevron-down"></i></div>
+								<ul class="submenu">
+									<li><a href="#">关于OPPO</a></li>
+									<li><a href="#">新闻中心</a></li>
+									<li><a href="#">OPPO 社区</a></li>
+									<li><a href="#">加入我们</a></li>
+									<li><a href="#">知识产权</a></li>
+								</ul>
+							</li>
+							<li><div class="link"><i class="fa fa-globe"></i>商务合作<i class="fa fa-chevron-down"></i></div>
+								<ul class="submenu">
+									<li><a href="#">企业业务</a></li>
+									<li><a href="#">开放平台</a></li>
+									<li><a href="#">采购相关</a></li>
+									<li><a href="#">媒体联络</a></li>
+							</ul>
+							</li>
+							<li><div class="link"><i class="fa fa-code"></i>服务与支持<i class="fa fa-chevron-down"></i></div>
+								<ul class="submenu">
+									<li><a href="#">联系我们</a></li>
+									<li><a href="#">ColorOS</a></li>
+									<li><a href="#">云服务</a></li>
+									<li><a href="#">以旧换新</a></li>
+									<li><a href="#">服务政策</a></li>
+									<li><a href="#">预置软件公示</a></li>
+									<li><a href="#">安全响应中心</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<br/>
+					<div class="container" style="margin-left: 40px;">
+						<a href="#"><img src="images/index/weibo.png" width="8%" height="8%" class="img-responsive"/></a>
+						<hr class="shoji1hr"/>
+						<div class="row">
+							<div class="col-xs-12">
+								<span><a href="#">隐私</a></span>&nbsp;&nbsp;<span><a href="#">用户协议</a></span>&nbsp;&nbsp;<span><a href="#">法律信息</a></span>&nbsp;&nbsp;<span><a href="#">粤公网安备 44190002001935号</a></span>&nbsp;&nbsp;
+								<span><a href="#"> © 2004 - 2020 OPPO 版权所有 粤ICP备08130115号-1</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		<script type="text/javascript">
+			$(function(){
+				
+				//鼠标移入导航条边变白色
+				/* $(".bianse").hover(function(){
+					$(this).css("background-color","white");
+				},function(){
+					$(this).css("background-color","transparent");
+				}); */
+				//底部菜单hover变色处理
+				$(".dibu li>a").hover(function(){
+					$(this).css("color","white");
+				},function(){
+					$(this).css("color","gray");
+				});
+				$(".dibu span>a").hover(function(){
+					$(this).css("color","white");
+				},function(){
+					$(this).css("color","gray");
+				});
+				//图片透明度
+				$(".ii img").hover(function(){
+					$(this).css("opacity","0.6");
+				},function(){
+					$(this).css("opacity","1");
+				});
+				$(".mm img").hover(function(){
+					$(this).css("opacity","0.6");
+				},function(){
+					$(this).css("opacity","1");
+				});
+				
+				
+				$(".navbar-default").css("background-color","white");
+			});
+		</script>
+
+</body>
+</html>

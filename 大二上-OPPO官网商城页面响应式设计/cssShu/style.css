@@ -1,0 +1,366 @@
+*{padding: 0px;
+  margin: 0px;
+ 
+  }
+body{
+	 overflow-x:hidden;
+}
+.imgTile{
+	width: 100%;
+	height: 600px;
+	background: url(../images/1.jpg) no-repeat;
+	-moz-background-size:100% 100%;
+	background-size:100% 100%;
+
+}
+
+@media all and (max-width:770px) {
+	.imgTile{
+		height: 300px;
+	}
+}
+.zi{
+
+	font-size: 48px;
+	color: white;
+	text-align: center;
+	margin-top: 70px;
+
+}
+.zibo{
+		font-size: 40px;
+	color: black;
+	text-align: center;
+	margin-top: 150px;
+}
+.kuang{
+	
+	height: 280px;
+	margin-top: 50px;
+	/* margin-left: 350px;
+	margin-top: 40px; */
+}
+
+.kuang input{
+	width: 495px;
+	height: 60px;
+	padding-left: 50px;
+	font-size: 20px;
+
+}
+.kuang img{
+	position: absolute;
+	margin-top: 20px;
+	width: 20px;
+	height: 20px;
+margin-left: 20px;
+}
+.bodyTool{
+
+   width: 100%;
+   height: 120px;
+   background-color: #FAFAFA;
+   margin-right: 4px;
+  
+}
+.ha .bodyTool:hover{
+    background-color: #E5E5E5;
+}
+.ListU{
+	
+	width: 495px;
+	padding-left: 40px;
+	padding-top: 30px;
+	border: 2px solid #F5F5F5 ;
+	background-color: white;
+	text-decoration: none;
+	list-style: none;
+	display: none;
+
+	
+}
+.ListU li dd{
+	margin-top: 10px;
+}
+.ListU li dt{
+	color: #656565;
+	font-size: 15px;
+}
+.ListU li dd a{
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+
+}
+.Bimg img{
+	width: 60px;
+	height: 50px;
+	margin-top: 35px;
+	margin-left: 10px;
+
+}
+.look{
+	margin-top: 35px;
+	font-weight: bold;
+	
+}
+.look a{ 
+	text-decoration: none;
+    font-size: 18px;
+	color: black;}
+.lookB{
+   
+    margin-top:10px;
+  
+}
+.lookB a{
+	text-decoration: none;
+  font-size: 15px;
+  color: #656565;
+}
+.bian{
+	margin-top:20px;
+}
+.Park{
+
+}
+.Park .One a{
+	 text-decoration: none;
+}
+.Park .Two a{
+	 text-decoration: none;
+}
+.One {
+  font-size: 20px;
+  color: black;
+ font-weight: bold;
+}
+.Two {
+    font-size: 20px;
+    color: #656565;
+    font-weight: bold;
+    
+}
+.Three{
+	 font-size: 20px;
+    color: #656565;
+    font-weight: bold;
+     
+
+}
+.Four{
+	 font-size: 20px;
+    color: #656565;
+    font-weight: bold;
+}
+.hang{
+	margin-top:50px;
+}
+.hrB{
+	margin-top:25px;
+	width: 100%;
+	height: 1px;
+	border-bottom: 2px solid #656565;
+}
+.qi{
+	padding-top:25px;
+	font-size: 20px;
+	color: black;
+	font-weight: bold;
+	text-align: left;
+}
+.TableTwo{
+	display: none;
+}
+.TableThree{
+	display: none;
+}
+.TableFour{
+	display: none;
+}
+.cool{
+	margin-top:50px; 
+}
+.cool img{
+	width: 470px;
+	height: 300px;
+
+}
+.wood{
+	font-size: 20px;
+	padding-left: 60px;
+	margin-top: 30px;
+	color: black;
+	font-weight: bold;
+
+}
+.wood img{
+	width: 50px;
+	height: 50px;
+}
+.cha{
+	font-size: 15px;
+	margin-top: 30px;
+	color: black;
+	border-bottom: 1px solid black;
+	margin-left: 20px;
+}
+.wood .cha a{ 
+text-decoration: none;
+color: black;}
+.dazi{
+	margin-top: 60px;
+	font-size: 20px;
+	color: black;
+}
+.ms{padding-left: 10px;}
+.ms img{
+	width: 80%;
+	height: 80%;
+	 transition-function: ease-out;
+    transition-duration: 1000ms;
+    -webkit-transition-function: ease-out;
+    -webkit-transition-duration: 1000ms;
+    -moztransition-function: ease-out;
+    -moztransition-duration: 1000ms;
+    -o-transition-function: ease-out;
+    -o-transition-duration: 1000ms;
+}
+.ms img:hover{
+	 transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+}
+.too{
+	margin-top:40px;
+	margin-left: 30px;
+}
+.gre{
+  width: 80px;
+  height: 20px;
+  background-color: green;
+  color: white;
+  text-align: center;
+}
+.jk{
+	font-size: 15px;
+   color: #656565;
+   margin-left: 10px;
+}
+.wule{
+   margin-top:20px;
+   font-size: 25px;
+   font-weight: bold;
+   color: black;
+}
+.gra{
+   margin-top:20px;
+   font-size: 18px;
+}
+
+.GoodTwo{
+	display: none;
+}
+.GoodThree{
+	display: none;
+}
+.GoodFour{
+	display: none;
+}
+.OneO{
+  font-size: 20px;
+  color: black;
+ font-weight: bold;
+  
+  border-bottom:  2px solid black;
+  border: none;
+  padding-bottom: 8px;
+}
+.TwoO{
+    font-size: 20px;
+    color: #656565;
+    font-weight: bold;
+     border-bottom:  2px solid black;
+     border-bottom: none;
+     padding-bottom: 8px;
+}
+.ThreeO{
+	 font-size: 20px;
+    color: #656565;
+    font-weight: bold;
+     border-bottom:  2px solid black;
+     border-bottom: none ;
+     padding-bottom: 8px;
+
+}
+.FourO{
+	 font-size: 20px;
+    color: #656565;
+    font-weight: bold; 
+}
+.gen{
+	margin-top: 100px;
+	font-size: 20px;
+	color: #656565;
+	border-bottom: 1px solid black;
+	text-align: center;
+}
+.HH{
+	margin-top:80px;
+}
+.nihao{
+   margin-top:20px;
+   font-size: 25px;
+   font-weight: bold;
+   color: black;
+   text-align: center;
+}
+.HH img{
+	width: 380px;
+	height: 250px;
+	 transition-function: ease-out;
+    transition-duration: 1000ms;
+    -webkit-transition-function: ease-out;
+    -webkit-transition-duration: 1000ms;
+    -moztransition-function: ease-out;
+    -moztransition-duration: 1000ms;
+    -o-transition-function: ease-out;
+    -o-transition-duration: 1000ms;
+}
+.HH img:hover{
+	 transform: scale(0.9,0.9);
+    -webkit-transform: scale(0.9,0.9);
+    -moz-transform: scale(0.9,0.9);
+    -o-transform: scale(0.9,0.9);
+}
+
+
+
+@media all and (max-width:767px) {
+	.xiaoyu767{
+		background-color: white;
+	}
+	.log{
+		background-color: white;
+	}
+}
+
+@media screen and (min-width:640px) and (max-width:999px) {
+	.dengluzhuce{
+		display: none;
+	}
+}
+.erjicaidan{
+	z-index: 100;
+}
+.erjicaidan a{
+	font-size: 15px;
+}
+.shoji{
+	position: absolute;
+	display: none;
+	float: left;
+	background-color: #fff;
+}
